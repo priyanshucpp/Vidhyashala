@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo v.png" type="image/x-icon/png">
+    <style>
+        .login-container a {
+            color: #3498db;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .login-container a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3498db;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .login-container a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .login-container a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">VIDHYASHALA</div>
+            <!-- <input type="text" placeholder="Type Something"> -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#courses">Courses</a>
+                <a href="index.html#team">Team</a>
+                <!-- <a href="register.html">Register Now!</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="login_process.php" method="post">
+                <input type="text" name="username" placeholder="Your Username..." required>
+                <input type="password" name="password" placeholder="Your Password..." required>
+                <button type="submit">Login</button>
+            </form>
+            <p>If not registered, <a href="index.html#contact">click here</a> to do so.</p>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VIDHYASHALA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
