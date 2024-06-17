@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/images/logo v.png" type="image/x-icon/png">
     <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+
+        }
         .login-container a {
-            color: #3498db;
+            color: #ffffff; /* White color for better visibility */
             text-decoration: none;
             position: relative;
             transition: color 0.3s ease;
@@ -22,7 +29,7 @@
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: #3498db;
+            background-color: #ffffff; /* White color for the underline effect */
             transform-origin: bottom right;
             transition: transform 0.3s ease-out;
         }
@@ -54,7 +61,7 @@
 
     <section class="login-section">
         <div class="login-container">
-            <h2>Login</h2>
+            <h2>Fill the details</h2>
             <form action="login_process.php" method="post">
                 <input type="text" name="username" placeholder="Your Email..." required>
                 <input type="password" name="password" placeholder="Your Password..." required>
